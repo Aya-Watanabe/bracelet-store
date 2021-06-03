@@ -1,0 +1,320 @@
+/*
+Theme name:bracelet-shop-theme
+Auther: Aya Wata
+*/
+
+body{
+    background-color: white;
+}
+
+/* HEADER STYLE */
+
+.header{
+    z-index:99;
+
+}
+
+header{
+    background-color:#fff;
+    /* width:100%; */
+    line-height:64px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.50);
+}
+
+header .logo{
+    width:200px;
+    padding-left:0;
+}
+
+.res-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ /* NAV MENU */
+.navigation{
+    display:none;
+}
+
+.hamburger{
+    display:block;
+    cursor:pointer;
+}
+
+@media screen and (min-width:992px){
+    .navigation{
+        display:flex;
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+    
+    .res-operator{
+        display:none;
+    }
+
+    .navigation .menu-item >a{
+        text-decoration: none;
+        padding:.25rem 1rem;
+        display:block;
+        font-size:1.4rem;
+        color:black;
+    }
+
+    .navigation .menu-item >a:hover{
+        color:gray;
+         font-weight:bold;
+    }
+}
+
+/* FRONT PAGE */
+
+#hero{
+    height:300px;
+    width:100%;
+    background:url('images/hero.jpg');
+    background-size:cover;
+    margin-bottom:2rem;
+}
+
+#hero h1{
+    color:white;
+    font-size:4rem;
+}
+
+@media screen and (min-width:768px){
+    #hero{
+        height:450px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    #hero{
+        height:550px;
+    }
+}
+
+.page-content{
+    padding:0 0 3rem;
+}
+
+/* STORY PAGE */
+@media screen and (min-width:1000px){
+    .page-texts{
+    max-width:1000px;
+    margin:0 auto;
+    }
+}
+
+/* BLOG PAGE */
+.blog-side-bar{
+    margin-top:1rem;
+}
+
+@media screen and (min-width:800px){
+    .card-body{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .blog-side-bar{
+        margin-top:0;
+    }
+}
+
+.blog-side-bar li,
+.blog-side-bar ul{
+    list-style:none;
+    text-decoration:none;
+    margin:0%;
+    padding:0;
+}
+
+.blog-side-bar ul li a{
+    text-decoration:none;
+    color:black;
+}
+
+.blog-side-bar ul li a:hover{
+    border-bottom:2px solid black;
+}
+
+/*CONTACT PAGE*/
+#cscf_SubmitButton{
+    background-color:#008b8b;
+    color:#fff;
+}
+
+#cscf_SubmitButton:hover{
+    background-color:#007272;
+    color:#fff;
+}
+
+@media screen and (min-width:1000px){
+.cscfBlock{
+max-width:1000px;
+margin:0 auto;
+}
+}
+
+/* FOOTER */
+footer{
+    width:100%;
+    background: #f0f0f0;
+}
+
+.res-footer{
+    text-align: center;
+}
+
+.menu-footer-menu-container,
+.menu-social-menu-container{
+    display:inline-block;
+}
+
+.footer-navigation,
+.footer-social{
+    list-style: none;
+    display:flex;
+    padding-left:0;
+}
+
+.footer-navigation li,
+.footer-social li {
+    padding:10px 8px;
+}
+
+.footer-navigation li a,
+.footer-social li a{
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+}
+
+.footer-navigation li a:hover,
+.footer-social li a:hover
+{
+    color:gray;
+}
+
+.site-info >a{
+    color:black;
+    text-decoration: none;
+}
+
+.site-info >a:hover{
+    border-bottom:1.5px solid black;
+}
+
+@media screen and (min-width:800px){
+    .res-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
+
+/* WOOCOMMERCE */
+/* PRODUCT TITLE */
+.woocommerce-loop-product__title{
+    color:black;
+}
+
+/* PRICE COLOR */
+.woocommerce-Price-amount{
+    font-weight:bold;
+    color:black;
+}
+
+/* PRODUCT PAGE GALLERY MARGIN */
+.woocommerce-product-gallery__image{
+    margin-top:10px;
+}
+
+/* CART/CHECKOUT BUTTON */
+.woocommerce a.button,
+.woocommerce button.button.alt,
+.woocommerce a.button.alt{
+background-color:#008b8b;
+color:#fff;
+}
+
+/* CART/CHECKOUT BUTTON HOVER*/
+.woocommerce a.button:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce a.button.alt:hover{
+background-color:#007272;
+color:#fff;
+}
+
+/* VIEW CART TEXT WHEN BUTTON IS PRESSED */
+.woocommerce ul.products li.product a{
+    padding-left:10px;
+}
+
+/* SWIPER ON FRONT PAGE*/
+.grid-container{
+    max-width:900px;
+    margin:0 auto;
+    padding-bottom:2rem;
+}
+
+.swiper-container{
+    max-height:650px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    outline:none;
+}
+
+/*OVERLAY*/
+.close{
+    text-align:right;
+}
+
+.overlay{
+    position:fixed;
+    top:0px;
+    bottom:0;
+    right:0;
+    left:0;
+    background:rgba(255,255, 255, 0.95);
+    text-align: center;
+    padding:1rem 0;
+    z-index:100;
+    opacity: 0;
+    pointer-events: none;
+    transition:opacity .6s;
+}
+
+.overlay ul{
+    margin:0;
+    padding:0;
+}
+.overlay li{
+    list-style:none;
+    margin-top:1rem;
+    font-size:2rem;
+}
+.overlay li a{
+    text-decoration: none;
+    color:black;
+}
+
+.overlay li a:hover{
+    border-bottom:3px solid black;
+}
+
+.overlay.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hamburger.hide{
+    display:none;
+}
